@@ -1,0 +1,37 @@
+.projects {
+  padding: 2rem 0;
+}
+
+.project__title {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: var(--body-header);
+  color: var(--text-color-100);
+  position: relative;
+  z-index: 1;
+}
+
+.project__title::after {
+  content: "03";
+  position: absolute;
+  top: -50px;
+  right: 100px;
+  color: var(--blue-100);
+  font-size: 144px;
+  z-index: -1;
+}
+
+.projects__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 50em) {
+  .projects__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

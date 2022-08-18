@@ -15,32 +15,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <textarea name="message"></textarea>
-        </form>
-
-        <form className={styles.contact__form}>
-          <div className={styles.form__inputs}>
-            <input type="hidden" name="form-name" value="contact" />
-            <div className={styles.contact__form__item}>
-              <label htmlFor="name">Name</label>
-              <input type="text" />
-            </div>
-            <div className={styles.contact__form__item}>
-              <label htmlFor="email">E-mail</label>
-              <input type="email" />
-            </div>
-          </div>
-          <div className={styles.contact__form__item}>
-            <label htmlFor="message">Message</label>
-            <input type="message" />
-          </div>
-          <button type="submit" className={styles.contact__btn}>
-            Send Message
-          </button>
-        </form>
+        <a href="mailto:evanskwofie67@gmail.com" className={styles.contact_cta}>
+          Let's Talk
+        </a>
       </section>
     </Container>
   );

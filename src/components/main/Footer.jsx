@@ -13,7 +13,7 @@ const Footer = () => {
         <Link to="https://www.github.com/0papi" target="_blank">
           Github
         </Link>
-        <Link to="https://www.twitter.com/evanskwofie5" target="_blank">
+        <Link to="https://twitter.com/EvansKwofie5" target="_blank">
           Twitter
         </Link>
         <Link

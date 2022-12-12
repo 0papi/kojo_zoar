@@ -21,18 +21,29 @@
 .hero__top h2 {
   font-size: 64px;
   font-weight: 600;
-  color: var(--text-color-100);
+  /* color: var(--text-color-100); */
+}
+
+.footer.all_dark h2,
+.footer.all_dark p,
+.footer.all_dark span {
+  color: var(--text-color-200);
+}
+.footer.all_light h2,
+.footer.all_light p,
+.footer.all_light span {
+  color: #000;
 }
 
 .hero__text p {
   font-weight: 300;
   padding-left: 2rem;
   font-size: var(--hero-subtext);
-  color: var(--text-color-200);
+  /* color: var(--text-color-200); */
 }
 
 .hero__text p span {
-  color: var(--text-color-100);
+  /* color: var(--text-color-100); */
   font-weight: 600;
 }
 

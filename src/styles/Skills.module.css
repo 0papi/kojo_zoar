@@ -11,6 +11,17 @@
   z-index: 1;
 }
 
+.skills.all_dark h2,
+.skills.all_dark li,
+.skills.all_dark h4 {
+  color: var(--text-color-200);
+}
+.skills.all_light h2,
+.skills.all_light li,
+.skills.all_light h4 {
+  color: #000;
+}
+
 .skills h2::after {
   content: "02";
   position: absolute;
@@ -28,7 +39,7 @@
 
 .skills ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
 }
 
@@ -53,7 +64,7 @@
   margin-bottom: 0.5rem;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (max-width: 600px) {
   .skills ul {
     grid-template-columns: repeat(2, 1fr);
   }

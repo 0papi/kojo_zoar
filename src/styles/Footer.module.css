@@ -14,6 +14,15 @@ h4 {
   font-weight: 300;
 }
 
+.footer.all_dark h3,
+.footer.all_dark h4 {
+  color: var(--text-color-200);
+}
+.footer.all_light h3,
+.footer.all_light h4 {
+  color: #000;
+}
+
 .footer__links {
   display: flex;
   align-items: center;

@@ -1,12 +1,20 @@
 .contact {
   padding: 2rem 0;
 }
+.contact.all_dark h2,
+.contact.all_dark p {
+  color: var(--text-color-200);
+}
+.contact.all_light h2,
+.contact.all_light p {
+  color: #000;
+}
 
 .contact__title {
   margin-bottom: 60px;
   font-weight: 600;
   font-size: var(--body-header);
-  color: var(--text-color-100);
+  /* color: var(--text-color-100); */
   position: relative;
   z-index: 1;
 }

@@ -2,11 +2,17 @@
   padding: 2rem 0;
 }
 
+.projects.all_dark h2 {
+  color: var(--text-color-200);
+}
+.projects.all_light h2 {
+  color: #000;
+}
+
 .project__title {
   margin-bottom: 60px;
   font-weight: 600;
   font-size: var(--body-header);
-  color: var(--text-color-100);
   position: relative;
   z-index: 1;
 }

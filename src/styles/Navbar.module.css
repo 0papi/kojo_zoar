@@ -6,17 +6,26 @@
   padding-top: 2em;
 }
 
-.logo {
+.logo,
+.themeBtn {
   z-index: 3;
 }
 
-.navbar a {
+.navbar.all_dark a {
   color: var(--text-color-200);
+}
+.navbar.all_light a {
+  color: #000;
 }
 
 .navbarLinks a:hover {
   color: var(--blue-100);
   transition: color 300ms ease-in;
+}
+
+.theme_icon {
+  height: 20px;
+  width: 20px;
 }
 
 .line {
@@ -49,10 +58,11 @@
   }
 
   .navbarLinks {
-    padding-top: 5rem;
+    padding-top: 10rem;
     background: var(--bg-black-100);
     flex-direction: column;
     /* align-items: flex-start; */
+
     gap: 2.5rem;
     position: fixed;
     top: 0;

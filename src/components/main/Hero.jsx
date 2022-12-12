@@ -1,9 +1,12 @@
 import styles from "../../styles/Hero.module.css";
-import Container from "../shared/Container";
+import { useGetTheme } from "../../utils/useGetTheme";
 
 const Hero = () => {
+  const { theme } = useGetTheme();
+  const returnClasses =
+    theme === "light" ? `${styles.all_light}` : `${styles.all_dark}`;
   return (
-    <Container className={styles.hero}>
+    <div className={`${styles.hero} ${returnClasses}`}>
       <div className={styles.hero__top}>
         <h2>Hello </h2>
         <div className={styles.line}></div>
@@ -26,7 +29,7 @@ const Hero = () => {
           and become a part of something greater than myself.
         </p>
       </div>
-    </Container>
+    </div>
   );
 };
 

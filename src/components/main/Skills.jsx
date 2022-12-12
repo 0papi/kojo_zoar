@@ -1,10 +1,13 @@
-import Container from "../shared/Container";
+import { useGetTheme } from "../../utils/useGetTheme";
 
 import styles from "../../styles/Skills.module.css";
 
 const Skills = () => {
+  const { theme } = useGetTheme();
+  const returnClasses =
+    theme === "light" ? `${styles.all_light}` : `${styles.all_dark}`;
   return (
-    <Container className={styles.skills}>
+    <div className={`${styles.skills} ${returnClasses}`}>
       <section id="skills">
         <h2>Skills</h2>
         <div className={styles.skills__info}>
@@ -19,6 +22,7 @@ const Skills = () => {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>React</li>
                 <li>Nextjs</li>
                 <li>Node/Express</li>
@@ -33,7 +37,7 @@ const Skills = () => {
           </div>
         </div>
       </section>
-    </Container>
+    </div>
   );
 };
 

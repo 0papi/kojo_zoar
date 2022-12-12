@@ -48,11 +48,20 @@
     z-index: 3;
   }
 
+  .navbar.all_dark .open,
+  .navbar.all_dark .close {
+    color: var(--text-color-100);
+  }
+  .navbar.all_light .open,
+  .navbar.all_light .open {
+    color: #000;
+  }
+
   .open,
   .close {
     width: 40px;
     height: 40px;
-    color: var(--text-color-100);
+    /* color: var(--text-color-100); */
     cursor: pointer;
     z-index: 10;
   }

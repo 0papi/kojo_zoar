@@ -1,12 +1,8 @@
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-
 import Container from "../shared/Container";
 
 import styles from "../../styles/Footer.module.css";
 
 const Footer = () => {
-  const navigate = useNavigate();
   const date = new Date();
   const todayDate = date.getFullYear();
   return (

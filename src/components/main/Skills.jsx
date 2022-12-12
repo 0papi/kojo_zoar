@@ -10,13 +10,11 @@ const Skills = () => {
         <div className={styles.skills__info}>
           <p className={styles.skills__info__main}>
             I am passionate about building web interfaces and welcome the
-            opportunity to collaborate on any number of projects. Below are the
-            skills I bring to the fore when building web applications:
+            opportunity to collaborate on any number of projects. Below are some
+            of the tools I have worked with actively or dabbled with:
           </p>
-
           <div className={styles.skills__sub__skills}>
             <div className={styles.skills__sub__skills_core}>
-              <h4>Core Skills</h4>
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -25,14 +23,9 @@ const Skills = () => {
                 <li>Nextjs</li>
                 <li>Node/Express</li>
                 <li>MongoDB</li>
+                <li>Recoil</li>
                 <li>Redux</li>
-              </ul>
-            </div>
-
-            <div className={styles.skills__sub__skills_other}>
-              <h4>Other</h4>
-              <ul>
-                <li>React Query</li>
+                <li>GraphQL Apollo Client</li>
                 <li>Firebase</li>
                 <li>Tailwind CSS</li>
               </ul>

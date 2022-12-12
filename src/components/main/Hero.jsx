@@ -10,12 +10,20 @@ const Hero = () => {
       </div>
       <div className={styles.hero__text}>
         <p>
-          I am <span>Evans Kojo Kwofie</span>, junior web developer with
-          interest in building fullstack applications. I am looking to join a
-          team that will provide the necessary environment for me to grow and
-          become a part of something greater than myself. Honestly, I just want
-          the chance to contribute towards building great products - and have
-          fun doing it!
+          I am <span>Evans Kojo Kwofie</span>, a frontend web developer. I have
+          worked with{" "}
+          <a href="https://insurerity.com/" target="_blank" rel="noreferrer">
+            Insurerity Digital
+          </a>{" "}
+          Insurerity Digital, where I focused on writing frontend logic to build
+          dynamic systems for insurance companies. Before then, I was an intern
+          at{" "}
+          <a href="https://www.tryklas.com/" target="_blank" rel="noreferrer">
+            tryklas
+          </a>
+          , where I focused on building reusable components. I am looking to
+          join a team that will provide the necessary environment for me to grow
+          and become a part of something greater than myself.
         </p>
       </div>
     </Container>

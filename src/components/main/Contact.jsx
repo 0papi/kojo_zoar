@@ -9,9 +9,8 @@ const Contact = () => {
         <div className={styles.contact__info}>
           <h2 className={styles.contact__title}>Let's Talk</h2>
           <p>
-            I’m interested in remote and freelance opportunities. However, if
-            you have other requests or questions, please don’t hesitate to use
-            the form.
+            I’m interested in remote or freelance opportunities. However, if you
+            have other requests or questions, please don’t hesitate to rech out.
           </p>
         </div>
 

@@ -26,20 +26,22 @@
   font-weight: 300;
 }
 
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+
 .skills li {
   font-size: var(--body-subtext);
   font-weight: 300;
-  color: var(--text-color-200);
+  color: var(--text-color-100);
 }
 
 .skills__info__main {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.skills__sub__skills {
-  display: flex;
-  gap: 6rem;
-}
 .skills__sub__skills_core,
 .skills__sub__skills_other {
   text-align: left;
@@ -49,4 +51,10 @@
   font-weight: 600;
   color: var(--text-color-100);
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 50em) {
+  .skills ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

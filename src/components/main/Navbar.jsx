@@ -7,7 +7,7 @@ import useTheme from "next-theme";
 import styles from "../../styles/Navbar.module.css";
 
 const Navbar = () => {
-  const { setTheme, theme, toggle } = useTheme();
+  const { setTheme, theme } = useTheme();
 
   const [showNav, setShowNav] = useState(false);
 

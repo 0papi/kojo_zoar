@@ -1,27 +1,34 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Container from "../shared/Container";
 
 import styles from "../../styles/Footer.module.css";
 
 const Footer = () => {
+  const navigate = useNavigate();
   const date = new Date();
   const todayDate = date.getFullYear();
   return (
     <Container className={styles.footer}>
       <div className={styles.footer__links}>
-        <Link to="https://www.github.com/0papi" target="_blank">
+        <a href="https://www.github.com/0papi" target="_blank" rel="noreferrer">
           Github
-        </Link>
-        <Link to="https://twitter.com/EvansKwofie5" target="_blank">
-          Twitter
-        </Link>
-        <Link
-          to="https://www.linkedin.com/in/evans-kojo-kwofie"
+        </a>
+        <a
+          href="https://twitter.com/EvansKwofie5"
           target="_blank"
+          rel="noreferrer"
+        >
+          Twitter
+        </a>
+        <a
+          href="https://www.linkedin.com/in/evans-kojo-kwofie"
+          target="_blank"
+          rel="noreferrer"
         >
           LinkedIn
-        </Link>
+        </a>
       </div>
       <hr className={styles.line} />
       <div>

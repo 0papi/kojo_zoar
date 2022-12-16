@@ -13,6 +13,20 @@ const Projects = () => {
         <h2 className={styles.project__title}>Projects</h2>
         <div className={styles.projects__card}>
           <ProjectCard
+            title="Complaint Management System"
+            stack="Nextjs, Firebase & Recoil"
+            appType="A central point for submitting complaints against insurance companies"
+            isPublic
+            readMoreLink="https://docs.google.com/document/d/1r3vTRFHXzFAqdbn-qIpsUuGvobKX0z7Wrw1YHmwm2r4/edit?usp=sharing"
+          />
+          <ProjectCard
+            title="TryKlas"
+            stack="Nextjs & Tailwindcss"
+            appType="All in one online teaching platform"
+            isPublic
+            readMoreLink="https://docs.google.com/document/d/1le7VX2yFQxcNL5mKKQxuFfmBxM9op6JjQxyEzPgAOwg/edit?usp=sharing"
+          />
+          <ProjectCard
             title="YelpCamp"
             stack="MERN App"
             appType="A place to find and create camps"

@@ -42,6 +42,16 @@
   align-items: center;
   gap: 1rem;
 }
+.project__card_only a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.project__card_only p {
+  color: var(--text-color-100);
+  font-size: 0.75rem;
+  font-weight: 300;
+}
 
 .project__card__actions a {
   background-color: transparent;

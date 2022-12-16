@@ -9,8 +9,6 @@ const Footer = () => {
     theme === "light" ? `${styles.all_light}` : `${styles.all_dark}`;
   const date = new Date();
   const todayDate = date.getFullYear();
-  const time =
-    date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
   return (
     <div className={`${styles.footer} ${returnClasses}`}>
       <div className={styles.footer__links}>
@@ -32,14 +30,10 @@ const Footer = () => {
           LinkedIn
         </a>
       </div>
-      <hr className={styles.line} />
+      <div className={styles.line}></div>
       <div>
         <h4 className={styles.footer__date}>{todayDate} Copyright</h4>
         <h3>Evans Kojo Kwofie</h3>
-      </div>
-
-      <div>
-        <h2>{time}</h2>
       </div>
     </div>
   );
